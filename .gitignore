@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.tmp
+.env
+.venv/
+venv/
+reports/
+*.json
+*.html
+*.txt
+
