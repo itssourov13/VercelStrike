@@ -128,7 +128,7 @@ def save_finding(phase, finding_type, severity, title, description, evidence, ta
     finding = {
         "type": finding_type, "severity": severity,
         "title": title, "description": description,
-        "evidence": evidence[:500] if evidence else "",
+        "evidence": str(evidence)[:500] if evidence else "",
         "timestamp": datetime.now().isoformat()
     }
     log(phase, finding, target_slug)
@@ -1573,4 +1573,4 @@ if __name__ == '__main__':
         import traceback
         traceback.print_exc()
         sys.exit(1)
-"""
+
